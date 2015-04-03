@@ -76,21 +76,10 @@ public class Driver {
 		System.out.println("*Enter Directory file name then press Enter.    *");
 		System.out.println("*************************************************");
 
-		String newInput = input.nextLine();
-		
-		
-		System.out.println("*************************************************");
-		System.out.println("**********************MENU***********************");
-		System.out.println("*1. Look up a phone number.                     *");
-		System.out.println("*2. Add an entry to the directory.              *");
-		System.out.println("*3. Delete an entry from the directory.         *");
-		System.out.println("*4. Change someone's phone number.              *");
-		System.out.println("*************************************************");
-		System.out.println("*************************************************");
-		System.out.println("To make a choice,\nType in a corresponding number and click Enter.");
-		
+	
 		String redo;
 		do{
+			String newInput = input.nextLine();
 			redo = "n";
 			
 			if ((newInput.equalsIgnoreCase("y"))){
@@ -103,12 +92,25 @@ public class Driver {
 					Action(newDirectory);
 				}
 				else{
+					
+					System.out.println("Invalid file. Please re-enter file name.");
 					redo = "y";
-					System.out.println("Invalid file. Please re enter.");
 				}
 			
 			}
 		}while(redo.equals("y"));
+		
+		System.out.println("*************************************************");
+		System.out.println("**********************MENU***********************");
+		System.out.println("*1. Look up a phone number.                     *");
+		System.out.println("*2. Add an entry to the directory.              *");
+		System.out.println("*3. Delete an entry from the directory.         *");
+		System.out.println("*4. Change someone's phone number.              *");
+		System.out.println("*************************************************");
+		System.out.println("*************************************************");
+		System.out.println("To make a choice,\nType in a corresponding number and click Enter.");
+		
+		
 	input.close();
 	}	
 }
