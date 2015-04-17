@@ -11,7 +11,17 @@ public class Driver {
 	
 	private static void Action(PhoneDirectory newDirectory){
 		Scanner input = new Scanner(System.in);
-			
+		
+		System.out.println("*************************************************");
+		System.out.println("**********************MENU***********************");
+		System.out.println("*1. Look up a phone number.                     *");
+		System.out.println("*2. Add an entry to the directory.              *");
+		System.out.println("*3. Delete an entry from the directory.         *");
+		System.out.println("*4. Change someone's phone number.              *");
+		System.out.println("*************************************************");
+		System.out.println("*************************************************");
+		System.out.println("To make a choice,\nType in a corresponding number and click Enter.");
+		
 		String choice;
 		
 		do{
@@ -99,17 +109,6 @@ public class Driver {
 			
 			}
 		}while(redo.equals("y"));
-		
-		System.out.println("*************************************************");
-		System.out.println("**********************MENU***********************");
-		System.out.println("*1. Look up a phone number.                     *");
-		System.out.println("*2. Add an entry to the directory.              *");
-		System.out.println("*3. Delete an entry from the directory.         *");
-		System.out.println("*4. Change someone's phone number.              *");
-		System.out.println("*************************************************");
-		System.out.println("*************************************************");
-		System.out.println("To make a choice,\nType in a corresponding number and click Enter.");
-		
 		
 	input.close();
 	}	
